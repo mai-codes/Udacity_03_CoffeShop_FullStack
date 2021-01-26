@@ -88,7 +88,7 @@ def check_permissions(permission, payload):
     if permission not in payload['permissions']:
         raise AuthError({
             'code': 'unauthorized',
-            'description': 'User does not have any roles attached''
+            'description': 'User does not have any roles attached'
         }, 403)
 
     return True
